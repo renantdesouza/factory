@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> 
-		
-        <title>Biscoitos Dell'Oro</title>
-		        
-        <link rel="stylesheet" type="text/css" href="resources/css/default.css"/>
-		<link rel="stylesheet" type="text/css" href="resources/css/component.css"/>
-		<link rel="stylesheet" type="text/css" href="resources/css/index.css"/>
-        
-		<!-- TODO VRIFICAR A CORRECAO PRA INTERNACIONALIZACAO -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS3 Menu Dropdowns</title>
+        <link rel="stylesheet" href="resources/css/normalize.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+
         <script src="resources/js/jquery-3.1.0.min.js"></script>
         <script src="resources/js/jquery.i18n.properties.js"></script>
         <script src="resources/js/jquery.mask.js"></script>
         <script src="resources/js/jquery.maskedinput.min.js"></script>
 
-        <script src="resources/js/classie.js"></script>
         <script src="resources/js/index.js"></script>
-
-		<script src="resources/js/Upgrowth/handlebars-v1.3.0.js"></script>
-		<script src="resources/js/Upgrowth/bundle.js"></script>
-		<script src="resources/js/Upgrowth/constants.js"></script>
+    
+        <script src="resources/js/Upgrowth/handlebars-v1.3.0.js"></script>
+        <script src="resources/js/Upgrowth/bundle.js"></script>
+        <script src="resources/js/Upgrowth/constants.js"></script>
         <script src="resources/js/Upgrowth/grid.js"></script>
         <script src="resources/js/Upgrowth/http.js"></script>
         <script src="resources/js/Upgrowth/page.js"></script>
@@ -29,25 +23,53 @@
         <script src="resources/js/Upgrowth/security.js"></script>
         <script src="resources/js/Upgrowth/template.js"></script>
         <script src="resources/js/Upgrowth/util.js"></script>
-	</head>
-	<body class="cbp-spmenu-push">
-		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="menu">
-			<h3>Menu</h3>
-			<a id="insert">Cadastrar</a>
-			<a id="search">Consultar</a>
-            <a id="transactions">Transações</a>
-		</nav>
+    </head>
+    <body>
+    <header>
+        <nav id="nav" class="fu ln">
+            <ul id="main-menu">
+                <li>
+                    <a id="home" href="#"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>Cadastros<i class="fa fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li><a id="insert-client" href="#0">Clientes</a></li>
+                        <li><a id="insert-ingredient" href="#0">Ingredientes</a></li>
+                        <li><a id="insert-supplier" href="#0">Fornecedores</a></li>
+                        <li><a id="insert-recipe" href="#0">Receitas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-briefcase"></i>Consultas<i class="fa fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li><a id="search-client" href="#0">Clientes</a></li>
+                        <li><a id="search-ingredient" href="#0">Ingredientes</a></li>
+                        <li><a id="search-supplier" href="#0">Fornecedores</a></li>
+                        <li><a id="search-recipe" href="#0">Receitas</a></li>
+                        <li><a id="search-sales"href="#0">Vendas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-comment"></i>Transações</a>
+                    <ul class="submenu">
+                        <li><a id="transactions" href="#0">Cliente</a></li>
+                        <li><a href="#0">Ingredientes</a></li>
+                        <li><a href="#0">Fornecedores</a></li>
+                        <li><a href="#0">Receitas</a></li>
+                        <li><a href="#0">Vendas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-		<div class="container">
-			<div id="header"></div>
-			<header class="clearfix">
-				<h1>Biscoitos Dell'Oro</h1>
-				<nav id="previous">
-					<a id="previous-img" class="icon-arrow-left"></a>
-				</nav>
-			</header>
-            <!--TODO COLOCAR A FUNCAO PRA MOSTRAR A TELA DINAMICAMENTE -->
-            <div class="template box"></div>
-		</div>
-	</body>
+    <div class="template box">
+    </div>
+
+    <footer>
+        <button id="previous"></button>
+    </footer>
+
+    </body>
 </html>

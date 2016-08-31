@@ -1,15 +1,15 @@
-document.getElementById('client').onclick = function() {
-    UpGrowth.page.open('client');
+document.getElementById('insert-client').onclick = function() {
+    UpGrowth.page.open('insert-client');
 };
 
-document.getElementById('ingredient').onclick = function() {
-    UpGrowth.page.open('ingredient');
+document.getElementById('insert-ingredient').onclick = function() {
+    UpGrowth.page.open('insert-ingredient');
 };
 
-document.getElementById('recipe').onclick = function() {
-    UpGrowth.page.open('recipe');
+document.getElementById('insert-recipe').onclick = function() {
+    UpGrowth.page.open('insert-recipe');
 };
 
-document.getElementById('supplier').onclick = function() {
-    UpGrowth.page.open('supplier');
+document.getElementById('insert-supplier').onclick = function() {
+    UpGrowth.page.open('insert-supplier');
 };
