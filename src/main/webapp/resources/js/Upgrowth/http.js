@@ -8,9 +8,11 @@ var UpGrowth = UpGrowth || {};
 
 // Faz uma chamada http.
 var ajax = function(obj) {
+    var url = window.location.pathname.split( '/' )[0];
+    
     return $.ajax({
         method: obj.method,
-        url: obj.url,
+        url: url + '/' + obj.url,
         data: obj.data
     });
 }

@@ -158,3 +158,26 @@ UpGrowth.util.array.copy = function(array, init, end) {
     }
     return newArray;
 };
+
+// constroi um objeto com os campos da tela
+UpGrowth.util.buildObj = function() {
+    var data = {};
+    
+    $($('form')[0].elements).each(function(i, el) {        
+        var key = el.name;
+        var name = el.nodeName
+        
+        if (name === 'INPUT') {
+            var type = el.type;
+            if (type === 'text') {
+                data[key] = el.innerHTML    
+            }
+        } else if (name === 'SELECT') {
+            var index = el.selectedIndex;
+            if (index != -1) {
+                data[key] = el.options[index].value;   
+            }
+        }
+    });
+    return data;
+};

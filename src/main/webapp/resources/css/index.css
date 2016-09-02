@@ -4,4 +4,39 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 100px;
+    border: none;
+}
+
+footer {
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    float: right;
+}
+
+.template {
+    color: #47a3da;
+}
+
+button {
+    background: #47a3da;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+.template label {
+    float: left;
+}
+
+.template input {
+    padding: 5px;
 }

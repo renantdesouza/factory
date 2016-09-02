@@ -1,24 +1,28 @@
-<form>
+<form controller="client.controller">
     <h3>Cadastro de clientes</h3>
     <br/>
-    <label>Nome:</label>
-    <input name="name" type="text"/>
-    <br/>
-    <label>CNPJ:</label>
-    <input name="cnpj" type="text"/>
-    <br/>
-    <label>Email:</label>
-    <input name="email" type="text"/>
-    <br/>
-    <label>Telefone:</label>
-    <input name="telefone" type="text"/>
-    <br/>
-    <label>Inscrição Estadual:</label>
-    <input name="inscricao" type="text"/>
-    <br/>
-    <label>Razão social:</label>
-    <input name="razao" type="text"/>
-    <br/>
-    <label>Limite de compra:</label>
-    <input name="limite" type="text"/>
+    <div>
+        <label for="name">Nome:</label>
+        <input name="name" type="text"/>
+        <br/>
+        <label>CNPJ:</label>
+        <input name="cnpj" type="text"/>
+        <br/>
+        <label>Email:</label>
+        <input name="email" type="text"/>
+        <br/>
+        <label>Telefone:</label>
+        <input name="telefone" type="text"/>
+        <br/>
+        <label>Inscrição Estadual:</label>
+        <input name="inscricao" type="text"/>
+        <br/>
+        <label>Razão social:</label>
+        <input name="razao" type="text"/>
+        <br/>
+        <label>Limite de compra:</label>
+        <input name="limite" type="text"/>
+        <br/>
+    </div>
+    <button onclick="enviar()">Enviar</button>
 </form>
