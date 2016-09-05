@@ -67,8 +67,24 @@ $(document).ready(function() {
         UpGrowth.page.open('search-supplier');
     };
 
+    document.getElementById('search-buy').onclick = function() {
+        UpGrowth.page.open('search-buy');
+    };
+
     document.getElementById('search-sales').onclick = function() {
         UpGrowth.page.open('search-sales');
     };
+
+    document.getElementById('transaction-product-buy').onclick = function() {
+        UpGrowth.page.open('transaction-product-buy');
+    };
+
+    document.getElementById('transaction-product-sales').onclick = function() {
+        UpGrowth.page.open('transaction-product-sales');
+    };
     
+    document.getElementById('transaction-spending').onclick = function() {
+        UpGrowth.page.open('transaction-spending');
+    };
+
 });

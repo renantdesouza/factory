@@ -1,9 +1,27 @@
-<form>
-    <h3>Cadastro de ingredientes</h3>
-    <label>Nome</label>
-    <input name="name" type="text"/>
+<form controller="insert-ingredient.controller">
+    <h3>Cadastro de Ingredientes</h3>
     <br/>
-    <label>Unidade de medida</label>
-    <select name="measure"/>
-    <br/>
+    <div>
+        <label for="name">Nome:</label>
+        <input name="name" type="text"/>
+        <br/>
+        <label for="amount">Quantidade:</label>
+        <input name="amount" type="text"/>
+        <br/>
+        <label for="unitaryValue">Valor unitário:</label>
+        <input name="unitaryValue" type="text"/>
+        <br/>
+        <label for="totalValue">Valor total:</label>
+        <input name="totalValue" type="text" disabled/>
+        <br/>
+        <label for="date">Data da compra:</label>
+        <input id="datepicker" name="date" type="text"/>
+        <br/>
+        <label for="measure">Unidade de medida:</label>
+        <select name="measure">
+            <!-- TODO trocar os options por valores dinâmicos -->
+            <option value="unitary">Unidade</option>
+        </select>
+    </div>
+    <button onclick="enviar()">Enviar</button>
 </form>
