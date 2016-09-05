@@ -1,0 +1,27 @@
+<form controller="transaction-product-sales.controller">
+    <h3>Venda de produtos</h3>
+    <br/>
+    <div>
+        <label for="client">Cliente:</label>
+        <select name="client" id="clients" data-placeholder="Selecione um cliente">
+            <option>Renan Teiixeira de Souza</option>
+        </select>
+        <br/>
+        <label for="amount">Quantidade:</label>
+        <input name="amount" type="text"/>
+        <br/>
+        <label for="unitaryValue">Valor unitário:</label>
+        <input name="unitaryValue" type="text"/>
+        <br/>
+        <label for="totalValue">Valor total:</label>
+        <input name="totalValue" type="text" disabled/>
+        <br/>
+        <label for="paymentType">Forma de pagamento:</label>
+        <input name="paymentType" type="text"/>
+        <br/>
+        <label for="paymentDate">Data de pagamento:</label>
+        <input name="paymentDate" id="datepicker" type="text"/>
+        <br/>
+    </div>
+    <button onclick="adicionar()">Adicionar</button>
+</form>

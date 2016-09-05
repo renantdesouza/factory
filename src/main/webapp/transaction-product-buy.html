@@ -1,0 +1,27 @@
+<form controller="transaction-product-buy.controller">
+    <h3>Compra de Produtos</h3>
+    <br/>
+    <div>
+        <label for="name">Nome:</label>
+        <input name="name" type="text"/>
+        <br/>
+        <label for="amount">Quantidade:</label>
+        <input name="amount" type="text"/>
+        <br/>
+        <label for="unitaryValue">Valor unitário:</label>
+        <input name="unitaryValue" type="text"/>
+        <br/>
+        <label for="totalValue">Valor total:</label>
+        <input name="totalValue" type="text" disabled/>
+        <br/>
+        <label for="date">Data da compra:</label>
+        <input id="datepicker" name="date" type="text"/>
+        <br/>
+        <label for="measure">Unidade de medida:</label>
+        <select name="measure">
+            <!-- TODO trocar os options por valores dinâmicos -->
+            <option value="unitary">Unidade</option>
+        </select>
+    </div>
+    <button onclick="adicionar()">Adicionar</button>
+</form>
