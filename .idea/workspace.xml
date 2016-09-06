@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8293dfb-f9d8-414c-baa7-b93b8571253a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert-ingredient.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert-client.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert-client.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-product-buy.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-product-buy.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-product-sales.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-product-sales.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-spending.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-spending.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/db/DBListener.java" afterPath="$PROJECT_DIR$/src/main/java/db/DBListener.java" />
     </list>
     <ignored path="factory.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,8 +139,8 @@
       <file leaf-file-name="DBListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/db/DBListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            <state relative-caret-position="268">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -231,7 +226,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Stock.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/db/DBListener.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Teste.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/MongoClienteAccessor.java" />
@@ -267,6 +261,7 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/ControllerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert-ingredient.controller.js" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/db/DBListener.java" />
       </list>
     </option>
   </component>
@@ -813,7 +808,14 @@
       <option name="project" value="LOCAL" />
       <updated>1473111004128</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="alteracao de layout&#10;">
+      <created>1473179988863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1473179988863</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -962,13 +964,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/db/DBListener.java</url>
-          <line>19</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/db/DBListener.java</url>
-          <line>30</line>
+          <line>35</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
@@ -1397,8 +1399,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/db/DBListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="268">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

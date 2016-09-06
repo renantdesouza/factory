@@ -15,11 +15,16 @@ import javax.servlet.ServletContextListener;
  */
 public class DBListener implements ServletContextListener {
 
+    private static final String HOST = "host";
+    private static final String PORT = "port";
+    private static final String NAME = "db.name";
+    private static final String PROPERTIES = "db.properties";
+
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        String host = getProp("host");
-        Integer port = Integer.parseInt(getProp("port"));
-        String dbName = getProp("db.name");
+        String host = getProp(HOST);
+        Integer port = Integer.parseInt(getProp(PORT));
+        String dbName = getProp(NAME);
         MongoClienteAccessor.setDB(new MongoClient(new ServerAddress(host, port)).getDB(dbName));
     }
 
@@ -28,7 +33,7 @@ public class DBListener implements ServletContextListener {
     }
 
     private String getProp(String name) {
-        return (String) PropertyReader.getProperty("db.properties", name);
+        return (String) PropertyReader.getProperty(PROPERTIES, name);
     }
 
 }
