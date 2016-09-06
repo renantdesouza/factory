@@ -1,7 +1,7 @@
 var adicionar = function() {
     UpGrowth.http({
         method: 'POST',
-        url: 'factory/rest/spending/add',
+        url: 'rest/spending/add',
         data: UpGrowth.util.buildObj()
     }).done(function() {
         alert('Sucesso ao comprar produto');

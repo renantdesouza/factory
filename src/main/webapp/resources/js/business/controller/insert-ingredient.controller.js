@@ -1,7 +1,7 @@
 var enviar = function() {
     UpGrowth.http({
         method: 'POST',
-        url: 'rest/client/insert',
+        url: 'rest/ingredient/insert',
         data: UpGrowth.util.buildObj()
     }).done(function() {
         alert('Sucesso ao cadastrar cliente');
