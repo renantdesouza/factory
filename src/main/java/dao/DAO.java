@@ -23,10 +23,11 @@ import java.util.List;
 public class DAO<T extends Model> {
 
     private Class<T> klazz;
-    private DBCollection collection = MongoClienteAccessor.getCollection(klazz.getSimpleName().toLowerCase());
+    private DBCollection collection;
 
     public DAO(Class<T> klazz) {
         this.klazz = klazz;
+        collection = MongoClienteAccessor.getCollection(klazz.getSimpleName().toLowerCase());
     }
 
     public void create(T entity) {
