@@ -1,8 +1,8 @@
 var UpGrowth = UpGrowth || {};
 
 UpGrowth.constants = {
-    url: '/page'
-    client
+    url: '/page',
+    client: 'client'
 };
 
 // Retorna o valor a URL relativa a partir da dependência

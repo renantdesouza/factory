@@ -42,8 +42,21 @@ h3 {
 
 .template input {
     padding: 5px;
+    border: none;
 }
 
-input {
-    border: none;
+li a {
+    padding: 20px;
+}
+
+.submenu {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    width: 0;
+}
+
+.submenu li a {
+    padding: 12px;
+    width: 175px;
 }
