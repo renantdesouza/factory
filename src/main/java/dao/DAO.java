@@ -12,6 +12,7 @@ import model.Model;
 import java.beans.Transient;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -48,7 +49,15 @@ public class DAO<T extends Model> {
     }
 
     public List<T> findAll() {
-        return find(null, null);
+        try {
+            return Arrays.asList(klazz.newInstance());
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        return null;
+        //return find(null, null);
     }
 
     public T findById(String id) {
