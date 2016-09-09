@@ -1,15 +1,15 @@
 <form controller="transaction-spending.controller">
-    <h3>Cadastro de gastos</h3>
+    <h3>Gasto Mensal</h3>
     <br/>
     <div>
-        <label for="client">Nome:</label>
-        <input name="amount" type="text"/>
-        <br/>
-        <label for="value">Valor:</label>
+        <label for="product" class="cadastro">Cliente:</label>
+        <select name="product" id="produtsc" data-placeholder="Selecione um produto">
+            <!-- CRIAR UM SCRIPT QUE PUXE TODOS OS GASTOS MENSAIS CADASTRADOS NÃO PAGOS ESSE MES -->
+            <option>Energia</option>
+        </select>
+        <br/><br/>
+        <label for="value" class="cadastro">Valor</label>
         <input name="value" type="text"/>
-        <br/>
     </div>
     <button onclick="adicionar()">Adicionar</button>
-    
-    <!-- TODO MONTAR UM GRID COM OS GASTOS -->
 </form>

@@ -2,26 +2,26 @@
     <h3>Venda de produtos</h3>
     <br/>
     <div>
-        <label for="client">Cliente:</label>
+        <label for="client" class="cadastro">Cliente:</label>
         <select name="client" id="clients" data-placeholder="Selecione um cliente">
+            <!-- CRIAR UM SCRIPT QUE PUXE TODOS OS CLIENTES CADASTRADOS -->
             <option>Renan Teiixeira de Souza</option>
         </select>
-        <br/>
-        <label for="amount">Quantidade:</label>
+        <br/><br/>
+        <label for="amount" class="cadastro">Quantidade:</label>
         <input name="amount" type="text"/>
-        <br/>
-        <label for="unitaryValue">Valor unitário:</label>
+        <br/><br/>
+        <label for="unitaryValue" class="cadastro">Valor unitário:</label>
         <input name="unitaryValue" type="text"/>
-        <br/>
-        <label for="totalValue">Valor total:</label>
+        <br/><br/>
+        <label for="totalValue" class="cadastro">Valor total:</label>
         <input name="totalValue" type="text" disabled/>
-        <br/>
-        <label for="paymentType">Forma de pagamento:</label>
+        <br/><br/>
+        <label for="paymentType" class="cadastro">Forma de pagamento:</label>
         <input name="paymentType" type="text"/>
-        <br/>
-        <label for="paymentDate">Data de pagamento:</label>
+        <br/><br/>
+        <label for="paymentDate" class="cadastro">Data de pagamento:</label>
         <input name="paymentDate" id="datepicker" type="text"/>
-        <br/>
     </div>
     <button onclick="adicionar()">Adicionar</button>
 </form>

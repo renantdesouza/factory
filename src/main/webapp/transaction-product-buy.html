@@ -2,25 +2,28 @@
     <h3>Compra de Produtos</h3>
     <br/>
     <div>
-        <label for="name">Nome:</label>
-        <input name="name" type="text"/>
-        <br/>
-        <label for="amount">Quantidade:</label>
+        <label for="product" class="cadastro">Cliente:</label>
+        <select name="product" id="produtsc" data-placeholder="Selecione um produto">
+            <!-- CRIAR UM SCRIPT QUE PUXE TODOS OS PRODUTOS CADASTRADOS -->
+            <option>Renan Teiixeira de Souza</option>
+        </select>
+        <br/><br/>
+        <label for="amount" class="cadastro">Quantidade:</label>
         <input name="amount" type="text"/>
-        <br/>
-        <label for="unitaryValue">Valor unitário:</label>
+        <br/><br/>
+        <label for="unitaryValue" class="cadastro">Valor unitário:</label>
         <input name="unitaryValue" type="text"/>
-        <br/>
-        <label for="totalValue">Valor total:</label>
+        <br/><br/>
+        <label for="totalValue" class="cadastro">Valor total:</label>
         <input name="totalValue" type="text" disabled/>
-        <br/>
-        <label for="date">Data da compra:</label>
+        <br/><br/>
+        <label for="date" class="cadastro">Data da compra:</label>
         <input id="datepicker" name="date" type="text"/>
-        <br/>
-        <label for="measure">Unidade de medida:</label>
+        <br/><br/>
+        <label for="measure" class="cadastro">Unidade de medida:</label>
         <select name="measure">
             <!-- TODO trocar os options por valores dinâmicos -->
-            <option value="unitary">Unidade</option>
+            <option value="unitary" class="cadastro">Unidade</option>
         </select>
     </div>
     <button onclick="adicionar()">Adicionar</button>

@@ -420,3 +420,9 @@ nav.dc .submenu:hover {
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
+
+label.cadastro {
+
+    display: inline-block;
+    width: 130px;
+}
