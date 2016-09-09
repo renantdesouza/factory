@@ -53,6 +53,7 @@ var removeController = function() {
     }
 }
 
+// adiciona dependência na tela que será aberta
 var addDependency = function(container) {
     var dependenciesAttr = $(container).find('dependencies');
     if (dependenciesAttr) {
@@ -60,9 +61,8 @@ var addDependency = function(container) {
         for (var key in dependencies) {
             var dependency = dependencies[i];
 
-            UpGrowth.http().get(UpGrowth.constants[dependency])
+            UpGrowth.http().get(UpGrowth.constants.getDependency(dependency))
             .done(function(data) {
-                UpGrowth.cache = UpGrowth.cache || {};
                 UpGrowth.cache[dependency] = data;
             }).fail(function() {
                 //TODO RESOLVER COMO APLICAR ISSO.
@@ -70,7 +70,7 @@ var addDependency = function(container) {
             });
         }
     }
-}
+};
 
 // Mantém o objeto em cache.
 var _cache = {};
