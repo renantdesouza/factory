@@ -55,7 +55,7 @@ var removeController = function() {
 
 // adiciona dependência na tela que será aberta
 var addDependency = function(container) {
-    var dependenciesAttr = $(container).find('dependencies');
+    var dependenciesAttr = $(container).find('[dependencies]').attr('dependencies');
     if (dependenciesAttr) {
         var dependencies = dependenciesAttr.split(',');
         for (var key in dependencies) {
