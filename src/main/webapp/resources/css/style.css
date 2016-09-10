@@ -422,7 +422,12 @@ nav.dc .submenu:hover {
 }
 
 label.cadastro {
-
     display: inline-block;
     width: 130px;
+    text-align: right;
+    margin: 5px
+}
+
+.template input {
+    margin-bottom: 7px;
 }

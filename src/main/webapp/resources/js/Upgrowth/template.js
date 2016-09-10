@@ -59,7 +59,7 @@ var addDependency = function(container) {
     if (dependenciesAttr) {
         var dependencies = dependenciesAttr.split(',');
         for (var key in dependencies) {
-            var dependency = dependencies[i];
+            var dependency = dependencies[key];
 
             UpGrowth.http().get(UpGrowth.constants.getDependency(dependency))
             .done(function(data) {
