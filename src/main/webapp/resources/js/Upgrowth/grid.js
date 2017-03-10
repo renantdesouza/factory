@@ -12,9 +12,11 @@ UpGrowth.grid.items = [];
 
 var _fields = []; 
 
-// define qual o tipo de ordenação cria.
-var order = 'crescent';
+UpGrowth.constants = UpGrowth.constants || {};
+UpGrowth.constants.crescent = 'crescent';
+UpGrowth.constants.decrescent = 'decrescent';
 
+// inicializa o grid
 UpGrowth.grid.init = function(items) {
     this.items = items;
     for(var i in items) {
@@ -27,7 +29,20 @@ UpGrowth.grid.init = function(items) {
     }
 }; 
 
+// ordena um array de objetos
 UpGrowth.grid.order = function(param) {
-    order = (order === 'crescent') ? 'crescent' : 'decrescent';
-    return UpGrowth.util.array[order](this.items, param);
+    return UpGrowth.util.array[_order](this.items, param);
 };
+
+// caso a ordem seja crescente vira decrescente, caso decrescente vira crescente
+UpGrowth.grid.changeOrder = function() {
+    _order = (_order == UpGrowth.constants.crescent) ? UpGrowth.constants.decrescent : UpGrowth.constants.crescent;
+};
+
+// altera a ordem
+UpGrowth.grid.setOrder = function(order) {
+    _order = order;
+};
+
+// define qual o tipo de ordenação cria.
+var _order = UpGrowth.grid.setOrder(UpGrowth.constants.crescent);
