@@ -8,7 +8,7 @@ package enumerations;
  */
 public enum Measure {
 
-    ;
+    ;// todo definir quais unidades de medido usar
 
     private byte code;
     private String desc;
