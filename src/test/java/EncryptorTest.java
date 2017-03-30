@@ -3,7 +3,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Created by renan on 03/08/2016.
+ * @author renantdesouza.
+ * @since 03/08/2016.
  */
 public class EncryptorTest {
 
