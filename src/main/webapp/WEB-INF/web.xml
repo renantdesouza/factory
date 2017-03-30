@@ -22,8 +22,8 @@
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
 
-    <listener>
+   <!-- <listener>
         <listener-class>db.DBListener</listener-class>
-    </listener>
+    </listener>-->
 
 </web-app>

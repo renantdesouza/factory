@@ -36,6 +36,7 @@ UpGrowth.http = function(obj) {
         put: function() {
             return ajax({method: 'PUT', url: url, data: data});
         },
+        //TODO RENAN VER SE ISSO NAO DA ERRO
         delete: function() {
             return ajax({method: 'DELETE', url: url, data: data});
         }
