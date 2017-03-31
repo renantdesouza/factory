@@ -1,14 +1,4 @@
-var adicionar = function() {
-    UpGrowth.http({
-        method: 'POST',
-        url: 'rest/product/sale/add',
-        data: UpGrowth.util.buildObj()
-    }).done(function() {
-        alert('Sucesso ao vender produto');
-    }).fail(function() {
-        alert('Erro ao vender produto');
-    });
-};
+var adicionar = UpGrowth.controller.add('product/sale');
 
 $('#datepicker').datepicker();
 
