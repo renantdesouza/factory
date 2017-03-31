@@ -4,6 +4,8 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 
 /**
+ * Manage database
+ *
  * @author Clesio
  * @since 17/04/2016
  * */
