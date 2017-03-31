@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8293dfb-f9d8-414c-baa7-b93b8571253a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/Upgrowth/controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert-client.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert-client.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert-ingredient.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/insert-ingredient.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-product-sales.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-product-sales.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-spending.controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/business/controller/transaction-spending.controller.js" />
     </list>
     <ignored path="factory.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -979,7 +973,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490901599473</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="adição de métodos para inserir modelos e transações">
+      <created>1490967775337</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1490967775337</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1070,7 +1071,8 @@
     <MESSAGE value="ajustes de layout" />
     <MESSAGE value="alteração &#10;" />
     <MESSAGE value="alteração" />
-    <option name="LAST_COMMIT_MESSAGE" value="alteração" />
+    <MESSAGE value="adição de métodos para inserir modelos e transações" />
+    <option name="LAST_COMMIT_MESSAGE" value="adição de métodos para inserir modelos e transações" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
