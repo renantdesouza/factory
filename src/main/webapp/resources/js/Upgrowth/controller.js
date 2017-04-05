@@ -8,12 +8,12 @@ Upgrowth = Upgrowth || {};
 
 Upgrowth.controller = Upgrowth.controller || {};
 
-// add é o modelo utilizado para os modelos
+// insert é o método utilizado para os modelos
 Upgrowth.controller.insert = function(type) {
     return post('rest/' + type + '/insert');
 };
 
-// add é o modelo utilizado nas transactions
+// add é o método utilizado nas transactions
 Upgrowth.controller.add = function(type) {
     return post('rest/' + type + '/add');
 }
@@ -27,6 +27,8 @@ var post(url) {
             data: UpGrowth.util.buildObj()
         }).done(function() {
             //TODO COLOCAR MENSAGEM DE SUCESSO E ERRO, PENSANDO NO BUNDLE
+
+            UpGrowth.
             alert('Sucesso ao cadastrar cliente');
         }).fail(function() {
             alert('Erro ao cadastrar cliente');

@@ -27,12 +27,12 @@ var init = function(deferred) {
         callback: deferred.resolve,
         language: UpGrowth.bundle._language
     });
-    //return $i18n.prop;   
-    return {};
+    return $i18n.prop;
+    //return {};
 };
 
 UpGrowth.bundle.apply = function(container, language) {
-    /*return load(language ? language : _defaultLanguage)
+    return load(language ? language : _defaultLanguage)
     .done(function() {
 		$(container).find("[data-bundle]").each(function(i, obj) {
 			obj = $(obj)
@@ -49,14 +49,14 @@ UpGrowth.bundle.apply = function(container, language) {
 				obj.html(string);
 			}
 		});
-	});*/
-    return {};
+	});
+    //return {};
 };
 
 // Devolve o valor do atributo registrado no bundle
 UpGrowth.bundle.getValue = function(name) {
-//    return init($Deferred)(name);
-    return {};
+    return init($Deferred)(name);
+    //return {};
 }
 
 var load = function(newLanguage) {
@@ -86,3 +86,5 @@ UpGrowth.bundle.languageExist = function(language)  {
 UpGrowth.bundle.getDefaultLanguage = function() {
     return _defaultLanguage;
 }
+
+//TODO os comentário no meio do método são pra evitar algum erro que ocorria, verificar o que acontece agora
