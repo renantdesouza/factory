@@ -7,10 +7,14 @@ UpGrowth.security.passwordLevel = function(pass) {
     
     if(pass.length > 6) {
         lvl++;
-    } else if(pass.lenght > 8) {
-        lvl++;
-    } else if(pass.lenght > 10) {
-        lvl++;
+    }
+
+    if(pass.lenght > 8) {
+        lvl+=2;
+    }
+
+    if(pass.lenght > 10) {
+        lvl+=3;
     }
     
     return lvl;

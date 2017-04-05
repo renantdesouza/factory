@@ -8,7 +8,7 @@ var UpGrowth = UpGrowth || {};
 
 // Faz uma chamada http.
 var ajax = function(obj) {
-    var url = window.location.pathname.split( '/' )[0];
+    var url = window.location.pathname.split('/')[0];
     
     return $.ajax({
         method: obj.method,
@@ -27,17 +27,17 @@ UpGrowth.http = function(obj) {
     // Após execução do método prosegue com a promise 
     // retornada pelo $.ajax.
     return {
-        get: function(url, data) {
+        'get': function(url, data) {
             return ajax({method: 'GET', url: url, data: data});
         },
-        post: function(url, data) {
+        'post': function(url, data) {
             return ajax({method: 'POST', url: url, data: data});
         },
-        put: function() {
+        'put': function() {
             return ajax({method: 'PUT', url: url, data: data});
         },
-        //TODO RENAN VER SE ISSO NAO DA ERRO
-        delete: function() {
+        //TODO RENAN VER SE ISSO NAO DA ERRO(usar em modo hash)
+        'delete': function() {
             return ajax({method: 'DELETE', url: url, data: data});
         }
     }
