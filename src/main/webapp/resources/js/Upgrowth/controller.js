@@ -18,6 +18,10 @@ Upgrowth.controller.add = function(type) {
     return post('rest/' + type + '/add');
 }
 
+Upgrowth.controller.get = function(type) {
+    return get('rest/' + type + '/find-all');
+}
+
 // usado para adicionar objeto com uma chamada http
 var post(url) {
     return function() {
@@ -35,3 +39,13 @@ var post(url) {
         });
     }
 }
+
+var get(url) {
+    return function() {
+        Upgrowth.http.get(url)
+        .done(function() {
+        }).fail(function() {
+        });
+    }
+}
+
